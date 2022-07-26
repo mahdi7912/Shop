@@ -9,10 +9,10 @@ import {
   Avatar,
   IconButton,
 } from '@material-ui/core'
-import { Search, Mail, Notifications, Cancel } from '@material-ui/icons'
+import { Search, Cancel } from '@material-ui/icons'
 import { useState } from 'react'
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 import Rightbar from './Rightbar'
-
 const useStyles = makeStyles((theme) => ({
   toolbar: {
     display: 'flex',
@@ -102,11 +102,9 @@ function Navabr() {
             className={classes.searchButton}
             onClick={() => setOpen(true)}
           />
-          <Badge badgeContent={4} color="secondary" className={classes.badge}>
-            <Mail />
-          </Badge>
+
           <Badge badgeContent={3} color="secondary" className={classes.badge}>
-            <Notifications />
+            <ShoppingCartIcon />
           </Badge>
           <Avatar
             alt="Remy Sharp"
