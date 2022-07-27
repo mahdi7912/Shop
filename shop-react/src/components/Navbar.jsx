@@ -13,6 +13,8 @@ import { Search, Cancel } from '@material-ui/icons'
 import { useState } from 'react'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 import Rightbar from './Rightbar'
+
+import './slider/Slider.css'
 const useStyles = makeStyles((theme) => ({
   toolbar: {
     display: 'flex',
@@ -77,7 +79,7 @@ function Navabr() {
   const [open, setOpen] = useState(false)
   const classes = useStyles({ open })
   return (
-    <AppBar>
+    <AppBar className="navbar">
       <Toolbar className={classes.toolbar}>
         <div>
           <Typography variant="h6" className={classes.logoLg}>
